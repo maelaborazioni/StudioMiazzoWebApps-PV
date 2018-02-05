@@ -1,0 +1,9 @@
+addEmptyValue:1,
+customValues:"Inserimento|0
+Modifica|1
+Eliminazione|2",
+name:"vls_pv_tipo_operazione",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"4B0517AE-D1BA-42ED-A2F3-2FA99E2975E8"

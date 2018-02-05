@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry excluding=".stp/|medias/" kind="src" path=""/>
+	<buildpathentry exported="true" kind="prj" path="/MA_Operations"/>
+	<buildpathentry exported="true" kind="prj" path="/MA_Shared"/>
+	<buildpathentry exported="true" kind="prj" path="/PV_Admin"/>
+	<buildpathentry exported="true" kind="prj" path="/PV_Lookup"/>
+	<buildpathentry exported="true" kind="prj" path="/PV_Report"/>
+	<buildpathentry exported="true" kind="prj" path="/PV_Richieste_Unified"/>
+	<buildpathentry exported="true" kind="prj" path="/PV_Shared"/>
+	<buildpathentry exported="true" kind="prj" path="/mod_datejs"/>
+	<buildpathentry exported="true" kind="prj" path="/mod_datepicker"/>
+	<buildpathentry exported="true" kind="prj" path="/utility"/>
+</buildpath>

@@ -1,0 +1,9 @@
+addEmptyValue:1,
+customValues:"Da inviare | 0
+Inviata | 1
+Elaborata | 2",
+name:"vls_pv_stato_operazione",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"A41828C7-CCDA-453B-8B8E-DB3A881E5500"
