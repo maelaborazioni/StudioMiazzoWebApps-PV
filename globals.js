@@ -6,7 +6,7 @@ function ma_pv_onSolutionOpen(startArgs)
 {
 	try
 	{
-		/** @type {JSFoundset<db:/ma_anagrafiche/ditte>} */
+		/** @type {JSFoundSet<db:/ma_anagrafiche/ditte>} */
 		var fs = databaseManager.getFoundSet(globals.Server.MA_ANAGRAFICHE, globals.Table.DITTE);
 			fs.loadAllRecords();
 			
