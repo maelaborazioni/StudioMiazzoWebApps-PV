@@ -36,6 +36,22 @@ function ma_pv_onSolutionOpen(startArgs)
 		
 		// Exclude all requests for owners other than the login one (only for the 'Sede' key)
 		if(!globals.ma_utl_hasKeySede())
+		{
+			// Ticket 16370 : filter by currently logged user only 
+			if(globals.ma_utl_hasKey(globals.Key.PANNELLO_VARIAZIONI_FILTRO_UTENTE))
+			{
+				databaseManager.addTableFilterParam
+				(
+						  globals.Server.MA_RICHIESTE
+						, globals.Table.LAVORATORI_RICHIESTE
+						, 'richiesta_utente'
+						, globals.ComparisonOperator.EQ
+						, globals.svy_sec_username 
+						, 'ftr_lavoratori_richieste_user'
+				);
+			}
+			
+		    // continue with filtering requests by owner
 			databaseManager.addTableFilterParam
 			(
 					  globals.Server.MA_RICHIESTE
@@ -44,7 +60,8 @@ function ma_pv_onSolutionOpen(startArgs)
 					, globals.ComparisonOperator.EQ
 					, globals.svy_sec_lgn_owner_id
 					, 'ftr_lavoratori_richieste_owner'
-			);
+			);			
+		}
 		
 		// Start jobs to check for updated and expired requests
 		startCheckForExpiredRequests(); 				 // at every login
